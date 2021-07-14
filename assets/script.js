@@ -69,8 +69,8 @@ function numberButton() {
         document.getElementById("writeAnswer").innerHTML += "÷";
         signe += 4;
     }
-    console.log(stockNumberFirst);
-    console.log(stockNumberSecond);
+    // console.log(stockNumberFirst);
+    // console.log(stockNumberSecond);
 }
 document.getElementById("egalButtonRun").addEventListener("click", () => {
     if(signe === 1) {
@@ -90,4 +90,13 @@ document.getElementById("egalButtonRun").addEventListener("click", () => {
         document.getElementById("writeAnswer").innerHTML = answer;
     }
     console.log(answer)
+})
+document.getElementById("resetButtonRun").addEventListener("click", () => {
+    document.getElementById("writeAnswer").innerHTML = "";
+    stockNumberFirst = "";
+    stockNumberSecond = "";
+    signe = 0;
+})
+document.getElementById("deleteButtonRun").addEventListener("click", () => {
+
 })
